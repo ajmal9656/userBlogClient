@@ -46,7 +46,10 @@ const Profile = () => {
       const fetchBlogs = async () => {
         try {
           // Make the API call to get the blogs by userId
-          const response = await axiosUrl.get(`/user-blogs/${userData.id}`);
+          const response = await axiosUrl.get(`/user-blogs/${userData.id}`, {
+            withCredentials: true,
+          });
+          
           console.log("user blogsssss",response)
           setBlogs(response.data.reverse()); // Set the fetched blogs in state
         } catch (err) {
@@ -143,6 +146,7 @@ const Profile = () => {
           headers: {
             'Content-Type': 'multipart/form-data',
           },
+          withCredentials: true,
         });
   
         console.log('Blog created successfully:', response.data);
