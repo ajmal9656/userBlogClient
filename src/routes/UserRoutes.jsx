@@ -2,7 +2,7 @@ import React from 'react'
 import { Routes,Route } from 'react-router-dom';
 import Register from '../components/Register';
 import Otp from '../components/Otp';
-import Login from '../components/login';
+import Login from "../components/Login"
 import Profile from '../components/Profile';
 import BlogDetails from '../components/BlogDetails';
 import Blogs from '../components/Blogs';
