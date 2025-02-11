@@ -3,7 +3,7 @@ import { configureStore } from '@reduxjs/toolkit';
 import storage from 'redux-persist/lib/storage'; // Local storage
 import { persistStore, persistReducer } from 'redux-persist';
 import { combineReducers } from 'redux';
-import userSlice from './Slice/userSlice';
+import userSlice from './Slice/userSlice.js';
 
 // Persist configuration
 const persistConfig = {
